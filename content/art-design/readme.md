@@ -1,7 +1,2 @@
 ## Art & Design
-Plain text. [name of site](https://link-to-site.org)
-*italic* 
-**bold**
-
-* List item
-* List item
+A believer that data is not only of practical value but also beautiful, Börner collaborates with artists and designers from around the globe, talents such as: Ingo Gunther, Ward Shelley, and Philip Beesley. These partnerships produced interactive macroscopes, data sculptures, science globes, educational puzzles, an award-winning film, a comic book, and much more. Many of these works travel the world as part of the [*Places & Spaces: Mapping Science exhibit*](https://scimaps.org).
