@@ -1,7 +1,4 @@
 ## About
-Plain text. [name of site](https://link-to-site.org)
-*italic* 
-**bold**
-
-* List item
-* List item
+Katy Börner’s work expands the possibilities of data analysis and visualization. A scholar, designer, author, and educator, she inspires a diverse global audience to transform data into  visualizations of power, clarity, and significance for the human condition.  Her mission to promote data literacy across all age groups has led her to explore all types of media, to give talks at all sizes of venues, and to have her exhibits hosted everywhere from the local library to world-renowned museums, science academies, and global institutions.
+ 
+Börner is the Victor Yngve Distinguished Professor of Intelligent Systems Engineering at Indiana University, Bloomington, where she is a founding director of the Cyberinfrastructure for Network Science Center (CNS). She is also a Humboldt Fellow and a Fellow of the American Association for the Advancement of Science (AAAS) and the Association of Computing Machinery (ACM).
