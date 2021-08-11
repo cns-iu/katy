@@ -1,4 +1,3 @@
-## Service
 In her efforts to give back to the greater data and visualization community, she serves on:
  
   * Committees at Indiana University
