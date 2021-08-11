@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Katy Börner</title>
+    <meta name="description"
+        content="Indiana University Professor specializing in scientometrics, informetrics, science of science studies, network science, cyberinfrastructure">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/gh/vanillawc/wc-markdown@1/index.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body * {
+            font-family: 'Lato', sans-serif;
+        }
+
+        a,
+        a:visited,
+        a:link {
+            color: #00abff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Nav */
+        .navbar {
+            max-height: 64px;
+        }
+
+        .bg-dark {
+            background-color: #000007 !important;
+        }
+
+        .navbar-brand .logo {
+            margin-top: -8px;
+            height: 1.5rem;
+        }
+
+        .navbar .btn {
+            background: transparent;
+            color: #ffffff;
+        }
+
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .navbar-dark .navbar-nav .nav-link:focus,
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+ 
+        @media screen and (min-width: 992px) {
+        .navbar .btn-contact {
+            display: inline-block;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            border: 1px solid #ffffff;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            color: #ffffff !important;
+        }
+        .navbar .btn-contact:hover {
+            background: #ffffff!important;
+            color: #000007!important;
+        }
+    }
+        /* Main */
+        .main-container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .h2 {
+            padding-bottom: .5rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #757575;
+        }
+
+        .img-max {
+            max-width: 15rem;
+        }
+
+        .img-thumbnail {
+            border-radius: 0;
+            padding: 0.25rem;
+            border-color: #e0e0e0;
+        }
+
+        .shadow-sm:hover {
+            box-shadow: 0 .5rem .75rem rgba(0, 0, 0, 0.5) !important;
+        }
+
+        .logo-pas {
+            max-width: 5rem;
+        }
+
+        .no-decoration {
+            text-decoration: none !important;
+        }
+
+        #art-design .card * {
+            text-decoration: none !important;
+            color: #424242;
+        }
+        .card-reverse .icon {
+            max-width: 4rem;
+        }
+
+        .card-reverse .text-color {
+            color: #ffffff;
+        }
+
+        /* Aside */
+        .aside-links .btn {
+            width: 100%;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+            padding: .75rem 1rem;
+            border-radius: 0;
+        }
+
+        .aside-links a {
+            color: #424242;
+        }
+        .aside-links .btn:hover {
+            background-color: #000007;
+            color: #ffffff;
+            transition: background-color 0.7s ease;
+        }
+        #art-design-section .card-body {
+            color: #424242;
+        }
+
+        /* Footer */
+        .main-footer {
+            margin-top: 4rem;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .footer-content {
+            padding-top: .5rem;
+            padding-left: 1.5rem;
+        }
+        .hero {
+            padding-top: 3.5rem;
+            position: relative;
+        }
+        .hero .hero-img {
+            height: auto;
+        }
+        .text-hero {
+            font-family: 'Cormorant Garamond', serif;
+            position: absolute;
+            top: 0;
+            margin-top: 20%;
+            padding-right: 5%;
+            margin-bottom: auto;
+            margin-left: 58%;
+            font-size: 2.5rem;
+            line-height: 1em;
+            color: #ffffff;
+            text-shadow: 2px 3px 4px #000007;
+            z-index: 50;
+            display: block;
+        }
+        @media screen and (min-width: 992px) {
+        .hero {
+            background-image: url("img/hero-katy.jpg");
+            height: calc(100vh);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 450px;
+        }
+        .text-hero {
+            font-family: 'Cormorant Garamond', serif;
+            margin-top: 0;
+            margin-left: 58%;
+            margin-right: 5%;
+            font-size: calc(16px + 48 * ((100vw - 320px) / 680));
+            line-height: 1em;
+            color: #ffffff;
+            text-shadow: 2px 3px 4px #000007;
+            z-index: 50;
+            display: block;
+            padding-top: 30vh;
+        }
+    }
+    .anchor {
+        top: -64px;
+        position: relative;
+        display: block;
+    }
+    .navbar .dropdown {
+        margin: 0;
+        padding: 0;
+        position:unset;
+    }
+    .navbar>.container-fluid {
+        justify-content: flex-end;
+        position: relative;
+    }
+    .navbar .navbar-brand {
+        position: absolute;
+        top: 0;
+        left: 1rem;
+    }
+    .navbar .dropdown-menu {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .navbar .dropdown-menu a {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        color: #424242;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .navbar .dropdown-menu a:hover {
+        text-decoration: none;
+        background-color: #000007;
+        color: #ffffff;
+
+    }
+    .navbar .dropdown-toggle {
+        color: rgba(255,255,255,.55);
+        text-decoration: none;
+    }
+    .navbar .dropdown-toggle:hover,
+    .navbar .show:hover {
+        color: rgba(255,255,255,1);
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="hero"><img src="img/hero-katy.jpg" class="d-lg-none w-100 hero-img"><span class="text-hero">Anyone can learn to map data!</span></div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid px-3 bg-dark">
+                <a class="navbar-brand" href="#"><img src="img/logo-katy-borner.svg" alt="Logo: Katy Borner"
+                        class="logo"></a>
+                        <!-- <div style="width: 40px; height: 40px; background: red;"></div> -->
+                        <div></div>
+                        
+                            <ul class="dropdown d-md-none">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Links
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://info.sice.indiana.edu/~katy/cv.html" target="_blank">CV</a></li>
+                                <li><a class="dropdown-item" href="http://scholar.google.com/citations?user=YirSp_cAAAAJ&hl=en"  target="_blank">Google Scholar</a></li>
+                                <li><a class="dropdown-item" href="https://cns.iu.edu/publications" target="_blank">Publications</a></li>
+                                <li><a class="dropdown-item" href="https://cns.iu.edu/presentations.html" target="_blank">Presentations</a></li>
+                                <li><a class="dropdown-item" href="https://orcid.org/0000-0002-3321-6137" target="_blank">ORCID</a></li>
+                                <li><a class="dropdown-item" href="https://cns.iu.edu/courses.html" target="_blank">Courses</a></li>
+                                <li><a class="dropdown-item" href="https://cns.iu.edu/workshops.html" target="_blank">Workshops</a></li>
+                                <li><a class="dropdown-item" href="https://scimaps.org" target="_blank">Mapping Science Exhibit</a></li>
+                                <li><a class="dropdown-item" href="https://socialblade.com/youtube/user/cnscenter" target="_blank">CNS YouTube Channel</a></li>
+                                </ul>
+                            </ul>
+                        
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 me-3 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link no-decoration" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link no-decoration" href="#research">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link no-decoration" href="#art-design">Art &amp; Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link no-decoration" href="#teaching">Teaching</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link no-decoration" href="#service">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-contact no-decoration" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+        <main class="main-container container-fluid">
+            <div class="row gx-5">
+                <div class="col col-md-8">
+                    <a class="anchor" id="about"></a>
+                    <section id="about-section" class="pt-4 pt-lg-5">
+                        <h2 class="h2">About</h2>
+                        <img class="img-fluid img-thumbnail mb-4 d-block d-sm-none" src="img/img-about-sm.jpg"
+                            alt="Katy Borner holding a giant world">
+                        <img class="float-end img-fluid img-thumbnail img-max ms-4 mb-4 d-none d-sm-block" src="img/img-about.jpg"
+                            alt="Katy Borner holding a giant world">
+                        <!-- <p>Katy Börner’s work expands the possibilities of data analysis and visualization. A scholar,
+                            designer, author, and educator, she inspires a diverse global audience to transform data
+                            into visualizations of power, clarity, and significance for the human condition. Her mission
+                            to promote data literacy across all age groups has led her to explore all types of media, to
+                            give talks at all sizes of venues, and to have her exhibits hosted everywhere from the local
+                            library to world-renowned museums, science academies, and global institutions.</p>
+                        <p>Börner is the Victor Yngve Distinguished Professor of Intelligent Systems Engineering at
+                            Indiana University, Bloomington, where she is a founding director of the Cyberinfrastructure
+                            for Network Science Center (CNS). She is also a Humboldt Fellow and a Fellow of the American
+                            Association for the Advancement of Science (AAAS) and the Association of Computing Machinery
+                            (ACM).</p> -->
+                            <wc-markdown src="content/about/readme.md" class="main"></wc-markdown>
+                    </section>
+                    <a class="anchor" id="research"></a>
+                    <section id="research-section" class="pt-4">
+                        <h2 class="h2">Research</h2>
+                        <img class="img-fluid img-thumbnail mb-4 d-block d-sm-none" src="img/img-research-sm.jpg"
+                            alt="Katy Borner holding a giant world">
+                        <img class="float-end img-fluid img-thumbnail img-max ms-4 mb-4 d-none d-sm-block" src="img/img-research.jpg"
+                            alt="Katy Borner holding a giant world">
+                        <p>At Indiana University-Bloomington's Cyberinfrastructure for Network Science center, she
+                            heads a team of professionals with skills in data visualization, research and application
+                            development, exhibit design, and media and interface design. She and her team research,
+                            develop, and serve innovative methods to model and visualize data from science, technology,
+                            biomedicine, education, and public policy so many can make better decisions that lead to
+                            more desirable futures. In 2021, she completed the Atlas Trilogy--a 16-year effort to
+                            introduce models and maps of science to general audiences via large-format coffee table
+                            books. </p>
+                        <div class="bg-light p-3">
+                            <h3 class="h5 text-uppercase">Recent Publications</h3>
+                            <div class="row">
+                                <div class="col-6 col-sm-3 pt-3">
+                                    <a href="https://www.pnas.org/content/101/suppl_1" title="External link to PNAS"
+                                        class="shadow-sm d-block" target="_blank"><img class="img-fluid img-thumbnail w-100"
+                                            src="img/img-pnas1.jpg" alt="Cover of PNAS"></a>
+                                </div>
+                                <div class="col-6 col-sm-3 pt-3">
+                                    <a href="https://www.pnas.org/modeling"
+                                        title="PNAS | Arthur M. Sackler Colloquium on Modeling and Visualizing Science and Technology Developments"
+                                        class="shadow-sm d-block" target="_blank"><img class="img-fluid img-thumbnail w-100"
+                                            src="img/img-pnas2.jpg" alt="Cover of PNAS"></a>
+                                </div>
+                                <div class="col-6 col-sm-3 pt-3">
+                                    <a href="https://www.pnas.org/content/116/6/1857"
+                                        title="PNAS | Data visualization literacy: Definitions, conceptual frameworks, exercises, and assessments"
+                                        class="shadow-sm d-block" target="_blank"><img class="img-fluid img-thumbnail w-100"
+                                            src="img/img-pnas3.jpg" alt="Page from PNAS article"></a>
+                                </div>
+                                <div class="col-6 col-sm-3 pt-3">
+                                    <a href="https://www.pnas.org/content/115/50/12630"
+                                        title="PNAS | Skill discrepancies between research, education, and jobs reveal the critical need to supply soft skills for the data economy"
+                                        class="shadow-sm d-block" target="_blank"><img class="img-fluid img-thumbnail w-100"
+                                            src="img/img-pnas4.jpg" alt="Page from PNAS article"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-light p-3 mt-2">
+                            <h3 class="h5 text-uppercase">Books</h3>
+                            <div class="row">
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://www.amazon.com/Atlas-Forecasts-Modeling-Mapping-Desirable/dp/0262045958/ref=sr_1_1?dchild=1&keywords=borner+atlas+forecast&qid=1620409272&s=books&sr=1-1"
+                                        title="Link to Amazon" class="shadow-sm d-block" target="_blank"><img
+                                            class="img-fluid img-thumbnail w-100" src="img/img-atlas-forecasts.jpg"
+                                            alt="Book Cover: Atlas of Forecasts"></a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://www.amazon.com/Atlas-Knowledge-Anyone-Can-Press/dp/0262028816/ref=sr_1_1?dchild=1&keywords=borner+atlas+knowledge&qid=1620409346&s=books&sr=1-1"
+                                        title="Link to Amazon" class="shadow-sm d-block" target="_blank"><img
+                                            class="img-fluid img-thumbnail w-100" src="img/img-atlas-knowledge.jpg"
+                                            alt="Book Cover: Atlas of Knowledge"></a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://www.amazon.com/Atlas-Science-Visualizing-What-Press/dp/0262014459/ref=sr_1_1?dchild=1&keywords=borner+atlas+science&qid=1620409324&s=books&sr=1-1"
+                                        title="Link to Amazon" class="shadow-sm d-block" target="_blank"><img
+                                            class="img-fluid img-thumbnail w-100" src="img/img-atlas-science.jpg"
+                                            alt="Book Cover: Atlas of Science"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <a class="anchor" id="art-design"></a>
+                    <section id="art-design-section" class="pt-4">
+                        <h2 class="h2">Art &amp; Design</h2>
+                        <p>A believer that data is not only of practical value but also beautiful, Börner collaborates
+                            with artists and designers from around the globe, talents such as: Ingo Gunther, Ward
+                            Shelley, and Philip Beesley. These partnerships produced interactive macroscopes, data
+                            sculptures, science globes, educational puzzles, an award-winning film, a comic book, and
+                            much more. Many of these works travel the world as part of the <a href="https://scimaps.org"
+                                title="Scimaps website"><em>Places & Spaces: Mapping Science exhibit</em></a>.</p>
+                        <div class="bg-light p-3 mt-2">
+                            <h3 class="h5 text-uppercase"><img src="img/logo-pas.svg" alt="Places & Spaces logo"
+                                    class="logo-pas"></h3>
+                            <div class="row">
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://scimaps.org" title="Places & Spaces exhibit" target="_blank" class="no-decoration">
+                                        <div class="card h-100 shadow-sm">
+                                            <img src="img/macroscopes/image.sm.jpg" class="card-img-top p-1" alt="Image of Nature 150 macroscope">
+                                            <div class="card-body">
+                                                <h5 class="h6">Macroscopes</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://www.youtube.com/watch?v=XP7BirC7hFI" title="Humanexus movie" target="_blank" class="no-decoration">
+                                        <div class="card h-100 shadow-sm">
+                                            <img src="img/humanexus/image.sm.jpg" class="card-img-top p-1" alt="Image of Humanexus movie poster">
+                                            <div class="card-body">
+                                                <h5 class="h6">Humanexus</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="http://worldprocessor.org/" title="Humanexus movie" target="_blank" class="no-decoration">
+                                        <div class="card h-100 shadow-sm">
+                                            <img src="img/worldprocessor_globes/image.sm.jpg" class="card-img-top p-1" alt="Image of WorldProcessor Globe">
+                                            <div class="card-body">
+                                                <h5 class="h6">WorldProcessor Globes</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://youtu.be/hSlYtTcehSI" title="Sculptures of Science interview" target="_blank" class="no-decoration">
+                                        <div class="card h-100 shadow-sm">
+                                            <img src="img/sculptures_of_science/image.sm.jpg" class="card-img-top p-1" alt="Image of Sculptures of Science">
+                                            <div class="card-body">
+                                                <h5 class="h6">Sculptures of Science</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://scimaps.org/images/maps/bonus/comic_book/comicbook_web.pdf" title="Download comic book" target="_blank" class="no-decoration">
+                                        <div class="card h-100 shadow-sm">
+                                            <img src="img/comic_book/image.sm.jpg" class="card-img-top p-1" alt="Image of Adventures in Knowledge Land comic">
+                                            <div class="card-body">
+                                                <h5 class="h6">Adventures in Knowledge Land</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="" title="" target="_blank" class="no-decoration">
+                                        <div class="card h-100 shadow-sm">
+                                            <img src="img/kids_puzzle/image.sm.jpg" class="card-img-top p-1" alt="Science Maps for Kids">
+                                            <div class="card-body">
+                                                <h5 class="h6">Science Maps for Kids</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <a class="anchor" id="teaching"></a>
+                    <section id="teaching-section" class="pt-4">
+                        <h2 class="h2">Teaching</h2>
+                        <img class="img-fluid img-thumbnail mb-4 d-block d-sm-none" src="img/img-teaching-sm.jpg"
+                            alt="KKaty Borner instructing a class">
+                        <img class="float-end img-fluid img-thumbnail img-max ms-4 mb-4 d-none d-sm-block" src="img/img-teaching.jpg"
+                            alt="Katy Borner instructing a class">
+                        <p>Börner is a passionate teacher who is deeply interested in making high-quality education
+                            accessible to all. In 2014, she was the first Indiana University faculty member to teach a
+                            massively open online course (MOOC), the Information Visualization MOOC. Students from more
+                            than 100 countries took this course and learned together. In 2019, CNS launched the Visual
+                            Analytics Certificate course to professional audiences. In 2020, CNS in partnership with the
+                            National Institutes of Health funded HuBMAP team, created the freely available Visible Human
+                            MOOC to engage novices and experts in creating a reference map of the healthy human
+                            body--all 33 trillion cells.</p>
+                        <p>Since 1998, she has taught a variety of courses at Indiana University covering topics such
+                            as:</p>
+                        <ul>
+                            <li>Information Visualization</li>
+                            <li>Structural Data Mining and Modeling</li>
+                            <li>User Interface Design for Information Systems</li>
+                            <li>Introduction to Human Computer Interaction</li>
+                        </ul>
+                    </section>
+                    <a class="anchor" id="service"></a>
+                    <section id="service-section" class="pt-4">
+                        <h2 class="h2">Service</h2>
+                        <p>In her efforts to give back to the greater data and visualization community, she serves on:
+                        </p>
+                        <ul>
+                            <li>Committees at Indiana University</li>
+                            <li>The Accelerating Behavioral Science Through Ontology Development and Use ad hoc
+                                committee of the National Academies of Sciences, Engineering, and Medicine</li>
+                            <li>And has previously served as a board member of Elsevier's Bibliometrics Research Program
+                                and on the Board on Global Science and Technology at The National Academies.</li>
+                        </ul>
+                    </section>
+                    <a class="anchor" id="contact"></a>
+                    <section id="contact-section" class="pt-4">
+                        <h2 class="h2">Contact</h2>
+                        <div class="p-3 mt-2">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="mailto:katy@indiana.edu" title="Email Katy Borner" class="no-decoration">
+                                        <div class="card bg-dark card-reverse shadow-sm text-center h-100">
+                                            <img src="img/ico-email-gry.svg" class="card-img-top mx-auto mt-2 icon"
+                                                alt="Email icon">
+                                            <div class="card-body">
+                                                <p class="card-text"><span class="text-color d-block">Email Katy</span>
+                                                    katy@indiana.edu</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="mailto:katy@indiana.edu" title="Email Katy Borner" class="no-decoration">
+                                        <div class="card bg-dark card-reverse shadow-sm text-center h-100">
+                                            <img src="img/ico-email-gry.svg" class="card-img-top mx-auto mt-2 icon"
+                                                alt="Email icon">
+                                            <div class="card-body">                                                
+                                                <p class="card-text"><span class="text-color d-block">Email Assistant</span>
+                                                    masmarti@iu.edu</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="http://scholar.google.com/citations?user=YirSp_cAAAAJ&hl=en" title="Katy Borner on Google Scholar" class="no-decoration" target="_blank">
+                                        <div class="card bg-dark card-reverse shadow-sm text-center h-100">
+                                            <img src="img/logo-google-scholar-gry.svg" class="card-img-top mx-auto mt-2 icon"
+                                                alt="Email icon">
+                                            <div class="card-body">                                                
+                                                <p class="card-text"><span class="text-color">Google Scholar</span>&nbsp;</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <aside class="col-md-4 aside-links d-none d-md-block pt-4 pt-lg-5 mt-2">
+                    <h3 class="h4 mb-3">QuickLinks</h3>
+                    <div>
+                        <ul class="list-unstyled">
+                            <li class="list-item"><a class="btn no-decoration" role="button"
+                                    href="https://info.sice.indiana.edu/~katy/cv.html" target="_blank">CV</a></li>
+                            <li class="list-item"><a class="btn no-decoration"
+                                    href="http://scholar.google.com/citations?user=YirSp_cAAAAJ&hl=en"
+                                    target="_blank">Google Scholar</a></li>
+                            <li class="list-item"><a class="btn no-decoration" href="https://cns.iu.edu/publications"
+                                    target="_blank">Publications</a></li>
+                            <li class="list-item"><a class="btn no-decoration" href="https://cns.iu.edu/presentations.html"
+                                    target="_blank">Presentations</a></li>
+                            <li class="list-item"><a class="btn no-decoration" href="https://orcid.org/0000-0002-3321-6137"
+                                    target="_blank">ORCID</a></li>
+                            <li class="list-item"><a class="btn no-decoration" href="https://cns.iu.edu/courses.html"
+                                    target="_blank">Courses</a></li>
+                            <li class="list-item"><a class="btn no-decoration" href="https://cns.iu.edu/workshops.html"
+                                    target="_blank">Workshops</a></li>
+                            <li class="list-item"><a class="btn no-decoration" href="https://scimaps.org" target="_blank">Mapping
+                                    Science Exhibit</a></li>
+                            <li class="list-item"><a class="btn no-decoration" href="https://socialblade.com/youtube/user/cnscenter"
+                                    target="_blank">CNS YouTube Channel</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <footer class="main-footer">
+            <p class="footer-content"><small>©
+                    <script>
+                        new Date().getFullYear() > 2010 && document.write(new Date().getFullYear());
+                    </script> All Rights
+                    Reserved.</small></p>
+        </footer>
+
+
+
+    </div>
+    <script src="js/bootstrap.bundle.min.js" async defer></script>
+</body>
+
+</html>
