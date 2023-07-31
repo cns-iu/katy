@@ -63,32 +63,35 @@
         .navbar-dark .navbar-nav .nav-link:hover {
             color: rgba(255, 255, 255, 1);
         }
- 
+
         @media screen and (min-width: 992px) {
-        .navbar .btn-contact {
-            display: inline-block;
-            font-weight: 400;
-            line-height: 1.5;
-            text-align: center;
-            vertical-align: middle;
-            cursor: pointer;
-            user-select: none;
-            border: 1px solid #ffffff;
-            padding: .375rem .75rem;
-            font-size: 1rem;
-            border-radius: .25rem;
-            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-            color: #ffffff !important;
-        }
-        .navbar .btn-contact:hover {
-            background: #ffffff!important;
-            color: #000007!important;
+            .navbar .btn-contact {
+                display: inline-block;
+                font-weight: 400;
+                line-height: 1.5;
+                text-align: center;
+                vertical-align: middle;
+                cursor: pointer;
+                user-select: none;
+                border: 1px solid #ffffff;
+                padding: .375rem .75rem;
+                font-size: 1rem;
+                border-radius: .25rem;
+                transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+                color: #ffffff !important;
+            }
+
+            .navbar .btn-contact:hover {
+                background: #ffffff !important;
+                color: #000007 !important;
+            }
+
+            .nav-link,
+            .dropdown-item {
+                font-size: 1.125rem !important;
+            }
         }
 
-        .nav-link, .dropdown-item {
-            font-size: 1.125rem !important;
-        }
-    }
         /* Main */
         .main-container {
             max-width: 960px;
@@ -127,6 +130,7 @@
             text-decoration: none !important;
             color: #424242;
         }
+
         .card-reverse .icon {
             max-width: 4rem;
         }
@@ -147,11 +151,13 @@
         .aside-links a {
             color: #424242;
         }
+
         .aside-links .btn:hover {
             background-color: #000007;
             color: #ffffff;
             transition: background-color 0.7s ease;
         }
+
         #art-design-section .card-body {
             color: #424242;
         }
@@ -166,13 +172,16 @@
             padding-top: .5rem;
             padding-left: 1.5rem;
         }
+
         .hero {
             padding-top: 3.5rem;
             position: relative;
         }
+
         .hero .hero-img {
             height: auto;
         }
+
         .text-hero {
             font-family: 'Cormorant Garamond', serif;
             position: absolute;
@@ -188,121 +197,157 @@
             z-index: 50;
             display: block;
         }
+
         @media screen and (min-width: 480px) {
             .text-hero {
                 margin-top: 20%;
                 font-size: 2.5rem;
             }
         }
+
         @media screen and (min-width: 640px) {
             .text-hero {
                 margin-top: 20%;
                 font-size: 3rem;
             }
         }
-        @media screen and (min-width: 992px) {
-        .hero {
-            background-image: url("img/hero-katy.jpg");
-            height: calc(100vh);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            min-height: 450px;
-        }
-        .text-hero {
-            font-family: 'Cormorant Garamond', serif;
-            margin-top: 0;
-            margin-left: 58%;
-            margin-right: 5%;
-            font-size: calc(16px + 48 * ((100vw - 320px) / 680));
-            line-height: 1em;
-            color: #ffffff;
-            text-shadow: 2px 3px 4px #000007;
-            z-index: 50;
-            display: block;
-            padding-top: 30vh;
-        }
-    }
-    .anchor {
-        top: -64px;
-        position: relative;
-        display: block;
-    }
-    .navbar .dropdown {
-        margin: 0;
-        padding: 0;
-        position:unset;
-    }
-    .navbar>.container-fluid {
-        justify-content: flex-end;
-        position: relative;
-    }
-    .navbar .navbar-brand {
-        position: absolute;
-        top: 0;
-        left: 1rem;
-    }
-    .navbar .dropdown-menu {
-        width: 100%;
-        border-radius: 0;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    }
-    .navbar .dropdown-menu a {
-        padding-top: .5rem;
-        padding-bottom: .5rem;
-        color: #424242;
-        border-bottom: 1px solid #e0e0e0;
-    }
-    .navbar .dropdown-menu a:hover {
-        text-decoration: none;
-        background-color: #000007;
-        color: #ffffff;
 
-    }
-    .navbar .dropdown-toggle {
-        color: rgba(255,255,255,.55);
-        text-decoration: none;
-    }
-    .navbar .dropdown-toggle:hover,
-    .navbar .show:hover {
-        color: rgba(255,255,255,1);
-    }
+        @media screen and (min-width: 992px) {
+            .hero {
+                background-image: url("img/hero-katy.jpg");
+                height: calc(100vh);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-height: 450px;
+            }
+
+            .text-hero {
+                font-family: 'Cormorant Garamond', serif;
+                margin-top: 0;
+                margin-left: 58%;
+                margin-right: 5%;
+                font-size: calc(16px + 48 * ((100vw - 320px) / 680));
+                line-height: 1em;
+                color: #ffffff;
+                text-shadow: 2px 3px 4px #000007;
+                z-index: 50;
+                display: block;
+                padding-top: 30vh;
+            }
+        }
+
+        .anchor {
+            top: -64px;
+            position: relative;
+            display: block;
+        }
+
+        .navbar .dropdown {
+            margin: 0;
+            padding: 0;
+            position: unset;
+        }
+
+        .navbar>.container-fluid {
+            justify-content: flex-end;
+            position: relative;
+        }
+
+        .navbar .navbar-brand {
+            position: absolute;
+            top: 0;
+            left: 1rem;
+        }
+
+        .navbar .dropdown-menu {
+            width: 100%;
+            border-radius: 0;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .navbar .dropdown-menu a {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+            color: #424242;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .navbar .dropdown-menu a:hover {
+            text-decoration: none;
+            background-color: #000007;
+            color: #ffffff;
+
+        }
+
+        .navbar .dropdown-toggle {
+            color: rgba(255, 255, 255, .55);
+            text-decoration: none;
+        }
+
+        .navbar .dropdown-toggle:hover,
+        .navbar .show:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        /* scroll section */
+        .testimonial-group>.row2 {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .testimonial-group>.row2>.col-xs-4 {
+            display: inline-block;
+            float: none;
+        }
     </style>
+
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="hero"><img src="img/hero-katy.jpg" class="d-lg-none w-100 hero-img"><span class="text-hero">Anyone can learn to map data!</span></div>
+        <div class="hero"><img src="img/hero-katy.jpg" class="d-lg-none w-100 hero-img"><span class="text-hero">Anyone
+                can learn to map data!</span></div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid px-3 bg-dark">
                 <a class="navbar-brand" href="#"><img src="img/logo-katy-borner.svg" alt="Logo: Katy Borner"
                         class="logo"></a>
-                        <!-- <div style="width: 40px; height: 40px; background: red;"></div> -->
-                        <div></div>
-                        
-                            <ul class="dropdown d-md-none">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Links
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="https://info.sice.indiana.edu/~katy/cv.html" target="_blank">CV</a></li>
-                                <li><a class="dropdown-item" href="http://scholar.google.com/citations?user=YirSp_cAAAAJ&hl=en"  target="_blank">Google Scholar</a></li>
-                                <li><a class="dropdown-item" href="https://cns.iu.edu/publications" target="_blank">Publications</a></li>
-                                <li><a class="dropdown-item" href="https://cns.iu.edu/presentations.html" target="_blank">Presentations</a></li>
-                                <li><a class="dropdown-item" href="https://orcid.org/0000-0002-3321-6137" target="_blank">ORCID</a></li>
-                                <li><a class="dropdown-item" href="https://cns.iu.edu/courses.html" target="_blank">Courses</a></li>
-                                <li><a class="dropdown-item" href="https://cns.iu.edu/workshops.html" target="_blank">Workshops</a></li>
-                                <li><a class="dropdown-item" href="https://scimaps.org" target="_blank">Mapping Science Exhibit</a></li>
-                                <li><a class="dropdown-item" href="https://socialblade.com/youtube/user/cnscenter" target="_blank">CNS YouTube Channel</a></li>
-                                </ul>
-                            </ul>
-                        
+                <!-- <div style="width: 40px; height: 40px; background: red;"></div> -->
+                <div></div>
+
+                <ul class="dropdown d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Links
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="https://info.sice.indiana.edu/~katy/cv.html"
+                                target="_blank">CV</a></li>
+                        <li><a class="dropdown-item" href="http://scholar.google.com/citations?user=YirSp_cAAAAJ&hl=en"
+                                target="_blank">Google Scholar</a></li>
+                        <li><a class="dropdown-item" href="https://cns.iu.edu/publications"
+                                target="_blank">Publications</a></li>
+                        <li><a class="dropdown-item" href="https://cns.iu.edu/presentations.html"
+                                target="_blank">Presentations</a></li>
+                        <li><a class="dropdown-item" href="https://orcid.org/0000-0002-3321-6137"
+                                target="_blank">ORCID</a></li>
+                        <li><a class="dropdown-item" href="https://cns.iu.edu/courses.html" target="_blank">Courses</a>
+                        </li>
+                        <li><a class="dropdown-item" href="https://cns.iu.edu/workshops.html"
+                                target="_blank">Workshops</a></li>
+                        <li><a class="dropdown-item" href="https://scimaps.org" target="_blank">Mapping Science
+                                Exhibit</a></li>
+                        <li><a class="dropdown-item" href="https://socialblade.com/youtube/user/cnscenter"
+                                target="_blank">CNS YouTube Channel</a></li>
+                    </ul>
+                </ul>
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0 me-3 navbar-nav-scroll">
                         <li class="nav-item">
@@ -325,7 +370,7 @@
                         </li>
                     </ul>
                 </div>
-                
+
             </div>
         </nav>
         <main class="main-container container-fluid">
@@ -336,43 +381,57 @@
                         <h2 class="h2">About</h2>
                         <img class="img-fluid img-thumbnail mb-4 d-block d-sm-none" src="img/img-about-sm.jpg"
                             alt="Katy Borner holding a giant world">
-                        <img class="float-end img-fluid img-thumbnail img-max ms-4 mb-4 d-none d-sm-block" src="img/img-about.jpg"
-                            alt="Katy Borner holding a giant world">
-                            <wc-markdown src="content/about/readme.md" class="main"></wc-markdown>
+                        <img class="float-end img-fluid img-thumbnail img-max ms-4 mb-4 d-none d-sm-block"
+                            src="img/img-about.jpg" alt="Katy Borner holding a giant world">
+                        <wc-markdown src="content/about/readme.md" class="main"></wc-markdown>
                     </section>
                     <a class="anchor" id="research"></a>
                     <section id="research-section" class="pt-4">
                         <h2 class="h2">Research</h2>
                         <img class="img-fluid img-thumbnail mb-4 d-block d-sm-none" src="img/img-research-sm.jpg"
                             alt="Katy Borner holding a giant world">
-                        <img class="float-end img-fluid img-thumbnail img-max ms-4 mb-4 d-none d-sm-block" src="img/img-research.jpg"
-                            alt="Katy Borner holding a giant world">
-                            <wc-markdown src="content/research/readme.md" class="main"></wc-markdown>
+                        <img class="float-end img-fluid img-thumbnail img-max ms-4 mb-4 d-none d-sm-block"
+                            src="img/img-research.jpg" alt="Katy Borner holding a giant world">
+                        <wc-markdown src="content/research/readme.md" class="main"></wc-markdown>
+
                         <div class="bg-light p-3">
                             <h3 class="h5 text-uppercase">Recent Publications</h3>
-                            <div class="row">
-                                <div class="col-6 col-sm-3 pt-3">
-                                    <a href="https://www.pnas.org/content/101/suppl_1" title="PNAS | Mapping Knowledge Domains"
-                                        class="shadow-sm d-block" target="_blank"><img class="img-fluid img-thumbnail w-100"
-                                            src="img/img-pnas1.jpg" alt="Cover of PNAS"></a>
-                                </div>
-                                <div class="col-6 col-sm-3 pt-3">
-                                    <a href="https://www.pnas.org/modeling"
-                                        title="PNAS | Modeling and Visualizing Science and Technology Developments"
-                                        class="shadow-sm d-block" target="_blank"><img class="img-fluid img-thumbnail w-100"
-                                            src="img/img-pnas2.jpg" alt="Cover of PNAS"></a>
-                                </div>
-                                <div class="col-6 col-sm-3 pt-3">
-                                    <a href="https://www.pnas.org/content/116/6/1857"
-                                        title="PNAS | Data visualization literacy: Definitions, conceptual frameworks, exercises, and assessments"
-                                        class="shadow-sm d-block" target="_blank"><img class="img-fluid img-thumbnail w-100"
-                                            src="img/img-pnas3.jpg" alt="Page from PNAS article"></a>
-                                </div>
-                                <div class="col-6 col-sm-3 pt-3">
-                                    <a href="https://www.pnas.org/content/115/50/12630"
-                                        title="PNAS | Skill discrepancies between research, education, and jobs reveal the critical need to supply soft skills for the data economy"
-                                        class="shadow-sm d-block" target="_blank"><img class="img-fluid img-thumbnail w-100"
-                                            src="img/img-pnas4.jpg" alt="Page from PNAS article"></a>
+                            <div class="container testimonial-group">
+                                <div class="row2">
+                                    <div class="col-xs-4 col-5 pt-3">
+                                        <a href="https://www.nature.com/immersive/d42859-023-00019-y"
+                                            title="Nature | Body Image" class="shadow-sm d-block" target="_blank"><img
+                                                class="img-fluid img-thumbnail w-100"
+                                                src="img/img-nature-body-image.png"
+                                                alt="Cover of Nature, Body Image edition"></a>
+                                    </div>
+                                    <div class="col-xs-4 col-5 pt-3">
+                                        <a href="https://www.pnas.org/content/101/suppl_1"
+                                            title="PNAS | Mapping Knowledge Domains" class="shadow-sm d-block"
+                                            target="_blank"><img class="img-fluid img-thumbnail w-100"
+                                                src="img/img-pnas1.jpg" alt="Cover of PNAS"></a>
+                                    </div>
+                                    <div class="col-xs-4 col-5 pt-3">
+                                        <a href="https://www.pnas.org/modeling"
+                                            title="PNAS | Modeling and Visualizing Science and Technology Developments"
+                                            class="shadow-sm d-block" target="_blank"><img
+                                                class="img-fluid img-thumbnail w-100" src="img/img-pnas2.jpg"
+                                                alt="Cover of PNAS"></a>
+                                    </div>
+                                    <div class="col-xs-4 col-5 pt-3">
+                                        <a href="https://www.pnas.org/content/116/6/1857"
+                                            title="PNAS | Data visualization literacy: Definitions, conceptual frameworks, exercises, and assessments"
+                                            class="shadow-sm d-block" target="_blank"><img
+                                                class="img-fluid img-thumbnail w-100" src="img/img-pnas3.jpg"
+                                                alt="Page from PNAS article"></a>
+                                    </div>
+                                    <div class="col-xs-4 col-5 pt-3">
+                                        <a href="https://www.pnas.org/content/115/50/12630"
+                                            title="PNAS | Skill discrepancies between research, education, and jobs reveal the critical need to supply soft skills for the data economy"
+                                            class="shadow-sm d-block" target="_blank"><img
+                                                class="img-fluid img-thumbnail w-100" src="img/img-pnas4.jpg"
+                                                alt="Page from PNAS article"></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -381,21 +440,21 @@
                             <div class="row">
                                 <div class="col-12 col-sm-4 pt-3">
                                     <a href="https://www.amazon.com/Atlas-Forecasts-Modeling-Mapping-Desirable/dp/0262045958/ref=sr_1_1?dchild=1&keywords=borner+atlas+forecast&qid=1620409272&s=books&sr=1-1"
-                                        title="Get Atlas of Forecasts on Amazon" class="shadow-sm d-block" target="_blank"><img
-                                            class="img-fluid img-thumbnail w-100" src="img/img-atlas-forecasts.jpg"
-                                            alt="Book Cover: Atlas of Forecasts"></a>
+                                        title="Get Atlas of Forecasts on Amazon" class="shadow-sm d-block"
+                                        target="_blank"><img class="img-fluid img-thumbnail w-100"
+                                            src="img/img-atlas-forecasts.jpg" alt="Book Cover: Atlas of Forecasts"></a>
                                 </div>
                                 <div class="col-12 col-sm-4 pt-3">
                                     <a href="https://www.amazon.com/Atlas-Knowledge-Anyone-Can-Press/dp/0262028816/ref=sr_1_1?dchild=1&keywords=borner+atlas+knowledge&qid=1620409346&s=books&sr=1-1"
-                                        title="Get Atlas of Knowledge on Amazon" class="shadow-sm d-block" target="_blank"><img
-                                            class="img-fluid img-thumbnail w-100" src="img/img-atlas-knowledge.jpg"
-                                            alt="Book Cover: Atlas of Knowledge"></a>
+                                        title="Get Atlas of Knowledge on Amazon" class="shadow-sm d-block"
+                                        target="_blank"><img class="img-fluid img-thumbnail w-100"
+                                            src="img/img-atlas-knowledge.jpg" alt="Book Cover: Atlas of Knowledge"></a>
                                 </div>
                                 <div class="col-12 col-sm-4 pt-3">
                                     <a href="https://www.amazon.com/Atlas-Science-Visualizing-What-Press/dp/0262014459/ref=sr_1_1?dchild=1&keywords=borner+atlas+science&qid=1620409324&s=books&sr=1-1"
-                                        title="Get Atlas of Science on Amazon" class="shadow-sm d-block" target="_blank"><img
-                                            class="img-fluid img-thumbnail w-100" src="img/img-atlas-science.jpg"
-                                            alt="Book Cover: Atlas of Science"></a>
+                                        title="Get Atlas of Science on Amazon" class="shadow-sm d-block"
+                                        target="_blank"><img class="img-fluid img-thumbnail w-100"
+                                            src="img/img-atlas-science.jpg" alt="Book Cover: Atlas of Science"></a>
                                 </div>
                             </div>
                         </div>
@@ -409,9 +468,11 @@
                                     class="logo-pas"></h3>
                             <div class="row">
                                 <div class="col-12 col-sm-4 pt-3">
-                                    <a href="https://scimaps.org" title="SciMaps: Places & Spaces exhibit" target="_blank" class="no-decoration">
+                                    <a href="https://scimaps.org" title="SciMaps: Places & Spaces exhibit"
+                                        target="_blank" class="no-decoration">
                                         <div class="card h-100 shadow-sm">
-                                            <img src="img/macroscopes/image.sm.jpg" class="card-img-top p-1" alt="Image of Nature 150 macroscope">
+                                            <img src="img/macroscopes/image.sm.jpg" class="card-img-top p-1"
+                                                alt="Image of Nature 150 macroscope">
                                             <div class="card-body">
                                                 <h5 class="h6">Macroscopes</h5>
                                             </div>
@@ -419,9 +480,11 @@
                                     </a>
                                 </div>
                                 <div class="col-12 col-sm-4 pt-3">
-                                    <a href="https://scimaps.org/hosting/learning-material/humanexus" title="SciMaps: Humanexus movie" target="_blank" class="no-decoration">
+                                    <a href="https://scimaps.org/hosting/learning-material/humanexus"
+                                        title="SciMaps: Humanexus movie" target="_blank" class="no-decoration">
                                         <div class="card h-100 shadow-sm">
-                                            <img src="img/humanexus/image.sm.jpg" class="card-img-top p-1" alt="Image of Humanexus movie poster">
+                                            <img src="img/humanexus/image.sm.jpg" class="card-img-top p-1"
+                                                alt="Image of Humanexus movie poster">
                                             <div class="card-body">
                                                 <h5 class="h6">Humanexus</h5>
                                             </div>
@@ -429,9 +492,12 @@
                                     </a>
                                 </div>
                                 <div class="col-12 col-sm-4 pt-3">
-                                    <a href="https://scimaps.org/hosting/learning-material/worldprocessor-globes" title="SciMaps: WorldProcessor Globes details" target="_blank" class="no-decoration">
+                                    <a href="https://scimaps.org/hosting/learning-material/worldprocessor-globes"
+                                        title="SciMaps: WorldProcessor Globes details" target="_blank"
+                                        class="no-decoration">
                                         <div class="card h-100 shadow-sm">
-                                            <img src="img/worldprocessor_globes/image.sm.jpg" class="card-img-top p-1" alt="Image of WorldProcessor Globe">
+                                            <img src="img/worldprocessor_globes/image.sm.jpg" class="card-img-top p-1"
+                                                alt="Image of WorldProcessor Globe">
                                             <div class="card-body">
                                                 <h5 class="h6">WorldProcessor Globes</h5>
                                             </div>
@@ -439,19 +505,23 @@
                                     </a>
                                 </div>
                                 <div class="col-12 col-sm-4 pt-3">
-                                    <a href="https://youtu.be/hSlYtTcehSI" title="Carrie Longley interview" target="_blank" class="no-decoration">
+                                    <a href="https://youtu.be/hSlYtTcehSI" title="Carrie Longley interview"
+                                        target="_blank" class="no-decoration">
                                         <div class="card h-100 shadow-sm">
-                                            <img src="img/sculptures_of_science/image.sm.jpg" class="card-img-top p-1" alt="Image of Sculptures of Science">
+                                            <img src="img/sculptures_of_science/image.sm.jpg" class="card-img-top p-1"
+                                                alt="Shape of Science Sculpture">
                                             <div class="card-body">
-                                                <h5 class="h6">Sculptures of Science</h5>
+                                                <h5 class="h6">Shape of Science Sculpture</h5>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-12 col-sm-4 pt-3">
-                                    <a href="img/comic_book/comicbook_web.pdf" title="Download comic book" target="_blank" class="no-decoration">
+                                    <a href="img/comic_book/comicbook_web.pdf" title="Download comic book"
+                                        target="_blank" class="no-decoration">
                                         <div class="card h-100 shadow-sm">
-                                            <img src="img/comic_book/image.sm.jpg" class="card-img-top p-1" alt="Image of Adventures in Knowledge Land comic">
+                                            <img src="img/comic_book/image.sm.jpg" class="card-img-top p-1"
+                                                alt="Image of Adventures in Knowledge Land comic">
                                             <div class="card-body">
                                                 <h5 class="h6">Adventures in Knowledge Land</h5>
                                             </div>
@@ -459,11 +529,25 @@
                                     </a>
                                 </div>
                                 <div class="col-12 col-sm-4 pt-3">
-                                    <a href="https://scimaps.org/hosting/learning-material/science-maps-for-kids" title="SciMaps: Science Maps for Kids" target="_blank" class="no-decoration">
+                                    <a href="https://scimaps.org/hosting/learning-material/science-maps-for-kids"
+                                        title="SciMaps: Science Maps for Kids" target="_blank" class="no-decoration">
                                         <div class="card h-100 shadow-sm">
-                                            <img src="img/kids_puzzle/image.sm.jpg" class="card-img-top p-1" alt="Science Maps for Kids">
+                                            <img src="img/kids_puzzle/image.sm.jpg" class="card-img-top p-1"
+                                                alt="Science Maps for Kids">
                                             <div class="card-body">
                                                 <h5 class="h6">Science Maps for Kids</h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://cns.iu.edu/amatria.html " title="Amatria: Sentient Architecture"
+                                        target="_blank" class="no-decoration">
+                                        <div class="card h-100 shadow-sm">
+                                            <img src="img/amatria/amatria-unveiling.jpg" class="card-img-top p-1"
+                                                alt="Amatria: Sentient Architecture">
+                                            <div class="card-body">
+                                                <h5 class="h6">Amatria: Sentient Architecture</h5>
                                             </div>
                                         </div>
                                     </a>
@@ -476,9 +560,9 @@
                         <h2 class="h2">Teaching</h2>
                         <img class="img-fluid img-thumbnail mb-4 d-block d-sm-none" src="img/img-teaching-sm.jpg"
                             alt="KKaty Borner instructing a class">
-                        <img class="float-end img-fluid img-thumbnail img-max ms-4 mb-4 d-none d-sm-block" src="img/img-teaching.jpg"
-                            alt="Katy Borner instructing a class">
-                            <wc-markdown src="content/teaching/readme.md" class="main"></wc-markdown>
+                        <img class="float-end img-fluid img-thumbnail img-max ms-4 mb-4 d-none d-sm-block"
+                            src="img/img-teaching.jpg" alt="Katy Borner instructing a class">
+                        <wc-markdown src="content/teaching/readme.md" class="main"></wc-markdown>
                     </section>
                     <a class="anchor" id="service"></a>
                     <section id="service-section" class="pt-4 pt-lg-5">
@@ -503,24 +587,28 @@
                                     </a>
                                 </div>
                                 <div class="col-12 col-sm-6 col-lg-4 pt-3">
-                                    <a href="mailto:masmarti@iu.edu" title="Email Matthew Martindale" class="no-decoration">
+                                    <a href="mailto:masmarti@iu.edu" title="Email Matthew Martindale"
+                                        class="no-decoration">
                                         <div class="card bg-dark card-reverse shadow-sm text-center h-100">
                                             <img src="img/ico-email-gry.svg" class="card-img-top mx-auto mt-2 icon"
                                                 alt="Email icon">
-                                            <div class="card-body">                                                
-                                                <p class="card-text"><span class="text-color d-block">Email Assistant</span>
+                                            <div class="card-body">
+                                                <p class="card-text"><span class="text-color d-block">Email
+                                                        Assistant</span>
                                                     masmarti@iu.edu</p>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
                                 <div class="col-12 col-sm-6 col-lg-4 pt-3">
-                                    <a href="http://scholar.google.com/citations?user=YirSp_cAAAAJ&hl=en" title="Katy Borner on Google Scholar" class="no-decoration" target="_blank">
+                                    <a href="http://scholar.google.com/citations?user=YirSp_cAAAAJ&hl=en"
+                                        title="Katy Borner on Google Scholar" class="no-decoration" target="_blank">
                                         <div class="card bg-dark card-reverse shadow-sm text-center h-100">
-                                            <img src="img/logo-google-scholar-gry.svg" class="card-img-top mx-auto mt-2 icon"
-                                                alt="Email icon">
-                                            <div class="card-body">                                                
-                                                <p class="card-text"><span class="text-color">Google Scholar</span>&nbsp;</p>
+                                            <img src="img/logo-google-scholar-gry.svg"
+                                                class="card-img-top mx-auto mt-2 icon" alt="Email icon">
+                                            <div class="card-body">
+                                                <p class="card-text"><span class="text-color">Google
+                                                        Scholar</span>&nbsp;</p>
                                             </div>
                                         </div>
                                     </a>
@@ -540,15 +628,16 @@
                                     target="_blank">Google Scholar</a></li>
                             <li class="list-item"><a class="btn no-decoration" href="https://cns.iu.edu/publications"
                                     target="_blank">Publications</a></li>
-                            <li class="list-item"><a class="btn no-decoration" href="https://cns.iu.edu/presentations.html"
-                                    target="_blank">Presentations</a></li>
-                            <li class="list-item"><a class="btn no-decoration" href="https://orcid.org/0000-0002-3321-6137"
-                                    target="_blank">ORCID</a></li>
+                            <li class="list-item"><a class="btn no-decoration"
+                                    href="https://cns.iu.edu/presentations.html" target="_blank">Presentations</a></li>
+                            <li class="list-item"><a class="btn no-decoration"
+                                    href="https://orcid.org/0000-0002-3321-6137" target="_blank">ORCID</a></li>
                             <li class="list-item"><a class="btn no-decoration" href="https://cns.iu.edu/courses.html"
                                     target="_blank">Courses</a></li>
                             <li class="list-item"><a class="btn no-decoration" href="https://cns.iu.edu/workshops.html"
                                     target="_blank">Workshops</a></li>
-                            <li class="list-item"><a class="btn no-decoration" href="https://scimaps.org" target="_blank">Mapping
+                            <li class="list-item"><a class="btn no-decoration" href="https://scimaps.org"
+                                    target="_blank">Mapping
                                     Science Exhibit</a></li>
                             <li class="list-item"><a class="btn no-decoration" href="https://cns.iu.edu/videos.html"
                                     target="_blank">CNS Videos</a></li>
@@ -563,13 +652,13 @@
                     <script>
                         new Date().getFullYear() > 2010 && document.write(new Date().getFullYear());
                     </script> All Rights
-                    Reserved.</small></p>
+                    Reserved.
+                </small></p>
         </footer>
-
-
 
     </div>
     <script src="js/bootstrap.bundle.min.js" async defer></script>
+
 </body>
 
 </html>
