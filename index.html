@@ -312,64 +312,6 @@
             float: none;
             margin-right: 25px;
         }
-
-        /*carousel*/
-        .box-outer {
-            position: relative;
-        }
-
-        .arrow-left {
-            position: absolute;
-            top: 120px;
-            left: 5px;
-            z-index: 1;
-            border: solid black;
-            border-width: 0 3px 3px 0;
-            display: inline-block;
-            padding: 3px;
-            transform: rotate(135deg);
-            -webkit-transform: rotate(135deg);
-        }
-
-        .arrow-right {
-            position: absolute;
-            top: 120px;
-            right: 5px;
-            z-index: 1;
-            border: solid black;
-            border-width: 0 3px 3px 0;
-            display: inline-block;
-            padding: 3px;
-            transform: rotate(-45deg);
-            -webkit-transform: rotate(-45deg);
-        }
-
-        .box-inner {
-            white-space: nowrap;
-            overflow-y: hidden;
-            overflow-x: scroll;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-            overflow: -moz-scrollbars-none;
-        }
-
-        .secondcontainer{
-            width: 100%;
-            padding-right: var(--bs-gutter-x,.75rem);
-            padding-left: var(--bs-gutter-x,.75rem);
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        ::-webkit-scrollbar {
-
-            background: transparent;
-        }
-
-        .thumb {
-            display: inline-block;
-        }
     </style>
 
 </head>
@@ -464,89 +406,82 @@
                             src="img/img-research.jpg" alt="Katy Borner holding a giant world">
                         <wc-markdown src="content/research/readme.md" class="main"></wc-markdown>
 
-                        <div class="bg-light pt-3">
+                        <div class="bg-light p-3 mt-2">
                             <h3 class="h5 text-uppercase">Recent Publications</h3>
-                            <div class="box-outer secondcontainer pt-3 pb-1">
-                                <a class="arrow-left arrow"></a>
-                                <a class="arrow-right arrow"></a>
-                                <div class="box-inner">
-                                    <div class="thumb pb-3">
-                                        <a href="https://www.nature.com/immersive/d42859-023-00019-y"
-                                            title="Nature | Body Image" class="shadow-sm d-block" target="_blank"><img
-                                                class="img-fluid img-thumbnail w-100 publications"
-                                                src="img/img-nature-body-image.png"
-                                                alt="Cover of Nature, Body Image edition"></a>
-                                    </div>
-                                    <div class="thumb">
-                                        <a href="https://www.nature.com/articles/s41556-021-00788-6"
-                                            title="Nature cell biology | Focus on mapping the cells of teh body"
-                                            class="shadow-sm d-block" target="_blank"><img
-                                                class="img-fluid img-thumbnail w-100 publications"
-                                                src="img/2021-Cover-nature.png"
-                                                alt="Nature cell biology | Focus on mapping the cells of teh body cover"></a>
-                                    </div>
-                                    <div class="thumb">
-                                        <a href="https://issues.org/wp-content/uploads/2019/07/2011-Spring-cover.jpg"
-                                            title="Issues | The Energy/Climate Complex" class="shadow-sm d-block"
-                                            target="_blank"><img class="img-fluid img-thumbnail w-100 publications"
-                                                src="img/2011-Cover-Issues.jpeg"
-                                                alt="Cover of Issues, The Energy/Climate Complex"></a>
-                                    </div>
-                                    <div class="thumb">
-                                        <a href="https://katy.luddy.indiana.edu/research/polis-cover-large.pdf"
-                                            title="Polis | Exploring Spaces" class="shadow-sm d-block"
-                                            target="_blank"><img class="img-fluid img-thumbnail w-100 publications"
-                                                src="img/2010-cover-polis.jpg"
-                                                alt="Cover of Polis, Exploring Spaces"></a>
-                                    </div>
-                                    <div class="thumb">
-                                        <a href="https://upload.wikimedia.org/wikipedia/commons/2/26/WMF_20072008_Annual_report._high_resolution.pdf"
-                                            title="Wikimedia Foundation | 2007/8 Annual Report"
-                                            class="shadow-sm d-block" target="_blank"><img
-                                                class="img-fluid img-thumbnail w-100 publications"
-                                                src="img/2008-cover-wikimedia.jpg"
-                                                alt="Cover Wikimedia Foundation 2007/8 Annual Report"></a>
-                                    </div>
-                                    <div class="thumb">
-                                        <a href=" https://onlinelibrary.wiley.com/doi/10.1002/cplx.20164"
-                                            title="Complexity cover" class="shadow-sm d-block" target="_blank"><img
-                                                class="img-fluid img-thumbnail w-100 publications"
-                                                src="img/2007-cover-complexity.jpeg" alt="Complexity cover"></a>
-                                    </div>
-                                    <div class="thumb">
-                                        <a href="https://nap.nationalacademies.org/catalog/11516/network-science"
-                                            title="Complexity cover" class="shadow-sm d-block" target="_blank"><img
-                                                class="img-fluid img-thumbnail w-100 publications"
-                                                src="img/2005-Cover-Network-Science.jpeg"
-                                                alt="Network Science Cover"></a>
-                                    </div>
-                                    <div class="thumb">
-                                        <a href="https://www.pnas.org/modeling"
-                                            title="PNAS | Modeling and Visualizing Science and Technology Developments"
-                                            class="shadow-sm d-block" target="_blank"><img
-                                                class="img-fluid img-thumbnail w-100 publications"
-                                                src="img/img-pnas2.jpg" alt="Cover of PNAS"></a>
-                                    </div>
-                                    <div class="thumb">
-                                        <a href="https://www.pnas.org/content/116/6/1857"
-                                            title="PNAS | Data visualization literacy: Definitions, conceptual frameworks, exercises, and assessments"
-                                            class="shadow-sm d-block" target="_blank"><img
-                                                class="img-fluid img-thumbnail w-100 publications"
-                                                src="img/img-pnas3.jpg" alt="Page from PNAS article"></a>
-                                    </div>
-                                    <div class="thumb">
-                                        <a href="https://www.pnas.org/content/115/50/12630"
-                                            title="PNAS | Skill discrepancies between research, education, and jobs reveal the critical need to supply soft skills for the data economy"
-                                            class="shadow-sm d-block" target="_blank"><img
-                                                class="img-fluid img-thumbnail w-100 publications"
-                                                src="img/img-pnas4.jpg" alt="Page from PNAS article"></a>
-                                    </div>
-                                    <div class="thumb">
-                                        <a href="https://www.pnas.org/content/101/suppl_1"
-                                            title="PNAS | Mapping Knowledge Domains" class="shadow-sm d-block"
-                                            target="_blank"><img class="img-fluid img-thumbnail w-100 publications"
-                                                src="img/img-pnas1.jpg" alt="Cover of PNAS"></a>
-                                    </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://www.nature.com/immersive/d42859-023-00019-y"
+                                        title="Nature | Body Image" class="shadow-sm d-block" target="_blank"><img
+                                            class="img-fluid img-thumbnail w-100 publications2"
+                                            src="img/img-nature-body-image.png"
+                                            alt="Cover of Nature, Body Image edition"></a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://www.nature.com/articles/s41556-021-00788-6"
+                                        title="Nature cell biology | Focus on mapping the cells of teh body"
+                                        class="shadow-sm d-block" target="_blank"><img
+                                            class="img-fluid img-thumbnail w-100 publications2"
+                                            src="img/2021-Cover-nature.png"
+                                            alt="Nature cell biology | Focus on mapping the cells of teh body cover"></a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://issues.org/wp-content/uploads/2019/07/2011-Spring-cover.jpg"
+                                        title="Issues | The Energy/Climate Complex" class="shadow-sm d-block"
+                                        target="_blank"><img class="img-fluid img-thumbnail w-100 publications2"
+                                            src="img/2011-Cover-Issues.jpeg"
+                                            alt="Cover of Issues, The Energy/Climate Complex"></a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://katy.luddy.indiana.edu/research/polis-cover-large.pdf"
+                                        title="Polis | Exploring Spaces" class="shadow-sm d-block" target="_blank"><img
+                                            class="img-fluid img-thumbnail w-100 publications2"
+                                            src="img/2010-cover-polis.jpg" alt="Cover of Polis, Exploring Spaces"></a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://upload.wikimedia.org/wikipedia/commons/2/26/WMF_20072008_Annual_report._high_resolution.pdf"
+                                        title="Wikimedia Foundation | 2007/8 Annual Report" class="shadow-sm d-block"
+                                        target="_blank"><img class="img-fluid img-thumbnail w-100 publications2"
+                                            src="img/2008-cover-wikimedia.jpg"
+                                            alt="Cover Wikimedia Foundation 2007/8 Annual Report"></a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href=" https://onlinelibrary.wiley.com/doi/10.1002/cplx.20164"
+                                        title="Complexity cover" class="shadow-sm d-block" target="_blank"><img
+                                            class="img-fluid img-thumbnail w-100 publications2"
+                                            src="img/2007-cover-complexity.jpeg" alt="Complexity cover"></a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://nap.nationalacademies.org/catalog/11516/network-science"
+                                        title="Complexity cover" class="shadow-sm d-block" target="_blank"><img
+                                            class="img-fluid img-thumbnail w-100 publications2"
+                                            src="img/2005-Cover-Network-Science.jpeg" alt="Network Science Cover"></a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://www.pnas.org/modeling"
+                                        title="PNAS | Modeling and Visualizing Science and Technology Developments"
+                                        class="shadow-sm d-block" target="_blank"><img
+                                            class="img-fluid img-thumbnail w-100 publications2" src="img/img-pnas2.jpg"
+                                            alt="Cover of PNAS"></a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://www.pnas.org/content/116/6/1857"
+                                        title="PNAS | Data visualization literacy: Definitions, conceptual frameworks, exercises, and assessments"
+                                        class="shadow-sm d-block" target="_blank"><img
+                                            class="img-fluid img-thumbnail w-100 publications2" src="img/img-pnas3.jpg"
+                                            alt="Page from PNAS article"></a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://www.pnas.org/content/115/50/12630"
+                                        title="PNAS | Skill discrepancies between research, education, and jobs reveal the critical need to supply soft skills for the data economy"
+                                        class="shadow-sm d-block" target="_blank"><img
+                                            class="img-fluid img-thumbnail w-100 publications2" src="img/img-pnas4.jpg"
+                                            alt="Page from PNAS article"></a>
+                                </div>
+                                <div class="col-12 col-sm-4 pt-3">
+                                    <a href="https://www.pnas.org/content/101/suppl_1"
+                                        title="PNAS | Mapping Knowledge Domains" class="shadow-sm d-block"
+                                        target="_blank"><img class="img-fluid img-thumbnail w-100 publications2"
+                                            src="img/img-pnas1.jpg" alt="Cover of PNAS"></a>
                                 </div>
                             </div>
                         </div>
